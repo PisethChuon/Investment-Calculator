@@ -7,7 +7,6 @@ import { Component, computed, inject } from '@angular/core';
   styleUrl: './investment-results.component.css',
 })
 export class InvestmentResultsComponent {
-  
-private InvestmentService = inject(InvestmentService);
+  private InvestmentService = inject(InvestmentService);
   results = computed(() => this.InvestmentService.resultData());
 }
